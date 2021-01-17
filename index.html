@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Tic-Tac-Toe</h1>
+    </header>
+
+      <div id="play-button" > Play! </div>
+
+
+    <div class="input">
+      <span>Player 1:</span>
+      <span id="directions"> Enter X or O</span>
+      <span id="p1_span"> </span>
+      <input type="text" id="input1"/>
+      <button id="button" onclick="inputFunc()"> Go!</button>
+      <span>Player 2: </span>
+      <span id="p2_span"></span>
+    </div>
+
+    <div class="first-move">
+      <span>We'll alternate who goes first each time. </span>
+      <span id="first-player">hi </span>
+      <span> - It's your move!</span>
+    </div>
+
+
+    <table class="board">
+      <tr>
+          <td id="s1" class="cell r1 c1"> </td>
+          <td id="s2" class="cell r1 c2"> </td>
+          <td id="s3" class="cell r1 c3"> </td>
+      </tr>
+      <tr>
+          <td id="s4" class="cell r2 c1"> </td>
+          <td id="s5" class="cell r2 c2"> </td>
+          <td id="s6" class="cell r2 c3"> </td>
+      </tr>
+      <tr>
+          <td id="s7" class="cell r3 c1"> </td>
+          <td id="s8" class="cell r3 c2"> </td>
+          <td id="s9" class="cell r3 c3"> </td>
+      </tr>
+
+    </table>
+    <div id="result"></div>
+    <div class="score-board">
+        <div id="user-label" class="badge">Player 1</div>
+        <div id="comp-label" class="badge">Player 2</div>
+        <div id="score"><span id="user-score" >0</span>:<span id="comp-score">0</span></div>
+      </div>
+
+    <div class="buttons">
+      <div class="button" id="Play Again">Play Again</div>
+      <div class="button" id="Clear"> Clear</div>
+      <div class="button" id="Restart Match">Restart Match</div>
+    </div>
+
+    <div class="instruction1">Oops! Looks like you're not ready to play yet. Try clicking Play Again</div>
+
+
+      <script src ="app.js" charset="utf-8"></script>
+
+  </body>
+</html>

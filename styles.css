@@ -1,0 +1,169 @@
+/* Main Styles */
+*{
+  margin: 0;
+  padding:0;
+}
+body{
+  background-color: #24272E;
+  font-family: Asap,sans-serif;
+}
+header{
+  background: #5F9EA0;
+  text-align: center;
+}
+header > h1{
+  padding: 6px;
+  font-size: 50px;
+}
+
+/* Input Style */
+
+#play-button {
+  background-color: white;
+  border-radius: 5px;
+  text-align:center;
+  font-size: 30px;
+  width:100px;
+  height:40px;
+  margin:5px auto;
+  cursor:pointer;
+  transition: 0.5s;
+}
+#play-button:hover{
+  background-color: #5F9EA0;
+}
+.input {
+  color:white;
+  font-size:20px;
+  text-align:center;
+}
+#input1{
+  width:20px;
+}
+button {
+  background-color:rgb(87, 160, 77);
+  height:30px;
+  margin-right:20px
+  transition: all 0.5s;
+}
+button:hover{
+  background-color:rgb(24, 243, 4);
+}
+.instruc-move{
+  margin-top: 10px;
+}
+.red-glow {
+  color: #fc121b;
+  box-shadow: 0 0 10px #d01115;
+}
+.stop-show{
+  display:none;
+}
+.show{
+  display:block;
+}
+
+.first-move {
+  text-align: center;
+  color: #fff;
+}
+/* Board Style */
+.board {
+  color: white;
+  padding:0px 0px;
+  height:350px;
+  width:350px;
+  margin:auto;
+  position:relative;
+  font-size: 50px;
+  text-align:center;
+
+}
+.cell {
+  height: 117px;
+  width: 117px;
+}
+.r1{
+  border-bottom: 2px solid white;
+  position:relative;
+  bottom:-4px;
+}
+.r2 {
+  border-bottom: 2px solid white;
+  position:relative;
+  bottom:-2px;
+}
+.c1{
+  border-right: 2px solid white;
+  position:relative;
+  left:4px;
+}
+.c2 {
+  border-right: 2px solid white;
+  position:relative;
+  left:2px;
+
+}
+/* Score Board Style */
+#result {
+  text-align:center;
+  color:white;
+
+}
+.score-board {
+  border:1px solid white;
+  height:75px;
+  width:200px;
+  margin:auto;
+  margin-top:15px;
+  color: white;
+  text-align: center;
+  position:relative;
+}
+#score {
+  position:absolute;
+  top:15px;
+  left:70px;
+  font-size: 40px;
+}
+.badge{
+  font-size:12px;
+  background-color: #6495ED;
+  width:50px;
+
+}
+#user-label{
+  position:absolute;
+  top:25px;
+  left:-20px;
+}
+#comp-label{
+  position:absolute;
+  top:25px;
+  left:180px;
+}
+.buttons{
+  display:flex;
+  justify-content: center;
+}
+.button {
+  display:inline-block;
+  font-size:20px;
+  color:white;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin-top:8px;
+  margin-left:10px;
+  padding:3px;
+}
+.button:hover {
+  transform:scale(1.075);
+    transition: 0.3s ease-in;
+    cursor:pointer;
+}
+
+/*Instructions */
+.instruction1 {
+  text-align: center;
+  color: #ffff;
+}
